@@ -1,9 +1,11 @@
 #lang racket/base
 
-(provide my-type-case)
+(provide define-type
+         my-type-case
+         )
 
 (require racket/match
-         (only-in plai type-case)
+         plai/datatype
          "define-syntax-parser.rkt"
          (for-syntax racket/base
                      syntax/parse
